@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafty Shoppy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+    <div class="logo">
+        Crafty <span>Shoppy</span>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Theme Toggle Button -->
+    <button id="themeBtn">🌙 Dark</button>
+
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>Crafty Shoppy</h1>
+
+        <p>
+            Welcome to Crafty Shoppy!<br>
+            Your one-stop destination for smart, stylish, and affordable shopping.
+        </p>
+
+        <a href="#" class="btn">Explore Store</a>
+
+    </section>
+    <!-- Products Section -->
+<section class="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500" alt="Men Shirt">
+            <h3>Men's Shirt</h3>
+            <p>Premium Cotton Casual Shirt</p>
+            <span class="price">₹999</span>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500" alt="Women Dress">
+            <h3>Women's Dress</h3>
+            <p>Elegant Party Wear Dress</p>
+            <span class="price">₹1,499</span>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Shoes">
+            <h3>Sports Shoes</h3>
+            <p>Comfortable Running Shoes</p>
+            <span class="price">₹2,299</span>
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+
+</section>
+
+    <script>
+const themeBtn = document.getElementById("themeBtn");
+
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        themeBtn.innerHTML = "☀️ Light";
+    }else{
+        themeBtn.innerHTML = "🌙 Dark";
+    }
+});
+</script>
+
+</body>
+</html>
